@@ -50,6 +50,11 @@ Run the application with:
 ./git-commit-ui
 ```
 
+## Screenshots
+![screeshot 1](screenshot_1.png)
+
+![screeshot 2](screenshot_2.png)
+
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
