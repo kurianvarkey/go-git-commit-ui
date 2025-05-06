@@ -1,0 +1,6 @@
+/vendor
+/tmp
+/logs
+.env
+config.json
+tests/coverage/*
