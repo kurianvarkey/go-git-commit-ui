@@ -58,8 +58,12 @@ func RunApp(gitHelper helpers.GitHelper, form handlers.CommitForm) error {
 		return fmt.Errorf("failed to determine remote URL: %w", err)
 	}
 
-	fmt.Printf("Push to %s\n", remoteURL)
-	handlers.PushToOrigin(gitHelper, branchName)
+	fmt.Printf("Pushing to %s\n", remoteURL)
+	if err = handlers.PushToOrigin(gitHelper, branchName); err != nil {
+		return fmt.Errorf("failed to push to origin: %w", err)
+	}
+
+	fmt.Printf("Pushed to %s successfully\n", remoteURL)
 
 	return nil
 }

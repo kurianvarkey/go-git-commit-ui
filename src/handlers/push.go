@@ -12,11 +12,13 @@ import (
 // repository on the branch with the given name.
 //
 // If the command fails, an error is logged with the command and output.
-func PushToOrigin(helper helpers.GitHelper, remoteBranch string) {
+func PushToOrigin(helper helpers.GitHelper, remoteBranch string) error {
 	cmd := fmt.Sprintf(commands.GitPush, remoteBranch)
 	output, err := helper.ExecuteCommand(cmd)
 	if err != nil {
 		log.Printf("Failed to push to origin: %v\nCommand: %q\nOutput: %q", err, cmd, output)
-		return
+		return err
 	}
+
+	return nil
 }
