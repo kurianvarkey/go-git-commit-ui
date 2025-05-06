@@ -122,8 +122,6 @@ func TestFeatureRunAppSuccessfulFlow(t *testing.T) {
 		ShouldPush:   true,
 	}
 
-	form := &MockForm{}
-
-	err := cmd.RunApp(mock, form)
+	err := cmd.RunApp(mock, &MockForm{})
 	require.NoError(t, err)
 }
