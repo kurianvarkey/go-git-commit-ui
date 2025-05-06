@@ -4,7 +4,7 @@ This is a Go application designed to streamline the process of committing change
 
 ## Features
 
-- **Git Initialization:** Checks if the current directory is a Git repository and prompts to initialize if not.
+- **Git Initialisation:** Checks if the current directory is a Git repository and prompts to initialise if not.
 - **File Status Checking:** Identifies changed and staged files, allowing users to decide whether to stage or commit changes.
 - **Commit Message UI:** Provides a terminal-based form to input commit details such as version, commit type, Jira reference, and summary.
 - **Customizable Commit Format:** Supports a predefined format for commit messages, ensuring consistency across commits.
