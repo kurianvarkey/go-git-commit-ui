@@ -22,6 +22,7 @@ func main() {
 	log.SetFlags(0)
 
 	helpers.ShowSpinner("Initialising...", func() {
+		helpers.ClearTerminal()
 		time.Sleep(1 * time.Second)
 	})
 
