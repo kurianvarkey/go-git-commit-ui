@@ -26,15 +26,15 @@ func RunApp(gitHelper helpers.GitHelper, form handlers.CommitForm) error {
 	}
 
 	// Step 2: check for changed files
-	changedFiles, exit := handlers.GetChangedFiles(gitHelper)
+	changedFiles, exit := handlers.GetStagedFiles(gitHelper)
 	if exit {
-		return fmt.Errorf("no changed files")
+		return fmt.Errorf("no staged files")
 	}
 
 	if len(changedFiles) == 0 {
-		changedFiles, exit = handlers.GetStagedFiles(gitHelper)
+		changedFiles, exit = handlers.GetChangedFiles(gitHelper)
 		if exit || len(changedFiles) == 0 {
-			return fmt.Errorf("no staged files")
+			return fmt.Errorf("no changed files")
 		}
 	}
 
