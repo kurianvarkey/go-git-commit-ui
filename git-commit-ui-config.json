@@ -1,0 +1,21 @@
+{
+  "commit_types": [
+    "feat",
+    "fix",
+    "refactor",
+    "chore",
+    "revert",
+    "db",
+    "docs",
+    "build",
+    "ci",
+    "perf",
+    "style",
+    "test",
+    "wip"
+  ],
+  "commit_format": "[$version][$type][$jira]: $summary",
+  "default_version": "1.x",
+  "default_commit_type": "feat",
+  "default_jira_reference": ""
+}

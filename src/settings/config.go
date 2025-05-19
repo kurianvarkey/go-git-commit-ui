@@ -19,7 +19,7 @@ type Config struct {
 	DefaultJiraReference string   `json:"default_jira_reference"`
 }
 
-const configFileName = "config.json"
+const configFileName = "git-commit-ui-config.json"
 
 // LoadConfig attempts to load a Config object from disk. If the file does not exist, it will be created
 // with default values. If the file exists, it will be read from disk and deserialized into a Config
