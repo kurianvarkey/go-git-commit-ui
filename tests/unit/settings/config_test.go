@@ -8,7 +8,7 @@ import (
 	"github.com/kurianvarkey/gitcommitui/src/settings"
 )
 
-const testConfigFile = "config.json"
+const testConfigFile = "git-commit-ui-config.json"
 
 func cleanupConfigFile(t *testing.T) {
 	t.Helper()
