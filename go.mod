@@ -7,7 +7,7 @@ require github.com/charmbracelet/huh/spinner v0.0.0-20250826160502-fa7f8a27cd5c
 require (
 	github.com/atotto/clipboard v0.1.4 // indirect
 	github.com/catppuccin/go v0.3.0 // indirect
-	github.com/charmbracelet/x/exp/strings v0.0.0-20250821175832-f235fab04313 // indirect
+	github.com/charmbracelet/x/exp/strings v0.0.0-20250904123553-b4e2667e5ad5 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
